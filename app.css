@@ -1198,7 +1198,9 @@ hr {
     width: 100%;
     max-width: 300px;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  .shit-container img {
+    display: none; } }
 
 @media screen and (max-width: 650px) {
   .button-nav {
@@ -1252,6 +1254,8 @@ hr {
     width: 100%; }
   .flex {
     display: block; }
+  .flex-container-sml {
+    display: block; }
   .flex > .usecase-box {
     margin-bottom: 40px;
     border-bottom: 4px solid #507cf0; } }
@@ -1281,7 +1285,15 @@ hr {
 body {
   margin: 0;
   padding: 0;
-  background-color: white; }
+  background-color: white;
+  overflow-x: hidden; }
+
+a .banner {
+  opacity: .95;
+  transition: .3s ease; }
+
+a .banner:hover {
+  opacity: 1; }
 
 .banner {
   position: relative;
@@ -1294,8 +1306,7 @@ body {
   background-size: cover;
   background-position-y: 5%;
   background-attachment: fixed;
-  margin: 80px 0px;
-  margin-top: 0px; }
+  margin-bottom: 60px; }
 
 .banner .primary-container {
   padding-top: 30px;
@@ -1304,7 +1315,7 @@ body {
   margin: auto; }
 
 .shit-container {
-  max-width: 800px; }
+  max-width: 600px; }
 
 .banner h4 {
   color: rgba(255, 255, 255, 0.897) !important;
@@ -1314,7 +1325,7 @@ body {
 
 .banner h1 {
   max-width: none;
-  font-size: 35px !important;
+  font-size: 28px !important;
   line-height: 40px !important; }
 
 .banner img {
@@ -1383,7 +1394,7 @@ body {
   position: relative;
   width: 100%;
   margin: auto;
-  height: 600px; }
+  height: 580px; }
 
 .hc-med {
   height: 350px; }
@@ -1420,7 +1431,7 @@ h4.hero.caps {
 
 img.hero-img {
   position: absolute;
-  height: 450px;
+  height: 430px;
   z-index: 1;
   top: 80px;
   right: 0;
@@ -2077,7 +2088,9 @@ input:required:valid {
     width: 100%;
     max-width: 300px;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  .shit-container img {
+    display: none; } }
 
 @media screen and (max-width: 650px) {
   .button-nav {
@@ -2130,6 +2143,8 @@ input:required:valid {
   .input-nav:focus {
     width: 100%; }
   .flex {
+    display: block; }
+  .flex-container-sml {
     display: block; }
   .flex > .usecase-box {
     margin-bottom: 40px;
