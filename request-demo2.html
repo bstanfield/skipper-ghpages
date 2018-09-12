@@ -90,123 +90,51 @@
   </div>
 </div>
 <!-- this is where content will be loaded for subsequent pages-->
-<script>
-  var $ = require('jquery');
-  $(function() {
-    $('.ftr1').click(function(){
-      $(".demoimg").attr('src',"images/Comprehensive Dashboards.png");
-    });
-    $('.ftr2').click(function(){
-      $('.demoimg').attr('src',"images/Templating.png");
-    });
-    $('.ftr3').click(function(){
-      $('.demoimg').attr('src',"images/EasyShare.png");
-    });
-  }); 
-  
-</script>
-<script>
-  var $ = require('jquery');
-  $(document).ready(function() {
-        $('.output').hide();
-        $('#simpleForm').submit(function(){
-                $('.output').show();   
-        });
-    });
-  
-  
-</script>
-<div class="background-blue">
-  <div class="hero-container">
-    <div class="hero-card">
-      <div class="hero-text">
-        <h1 class="hero">Create reports faster with Skipper.</h1>
-        <h4 class="hero">Create real-time organizational health dashboards in minutes with Skipper.</h4>
-        <form id="simpleForm" action="/success.html" method="GET">
-          <input class="input-box input-nav fatty" type="email" placeholder="Enter email" name="email" required>
-          <input class="button hero-btn" id="email_submit" type="submit" value="Join beta">
-        </form>
-      </div><img class="hero-img" src="images/graph-grid.png">
-    </div>
-  </div>
-</div><a target="_blank" href="http://www.hrtechnologyconference.com/">
-  <div class="banner">
-    <div class="primary-container">
-      <div class="shit-container">
-        <h4 class="hero caps">SEPTEMBER 11 - 14</h4>
-        <h1 class="hero">Find the Skipper team at HR Technology Conference 2018!</h1>
-        <h4 class="hero">Get $300 off your attendee ticket with our discount code by request.</h4><img src="images/skipper-icon-white.png">
-      </div>
-    </div>
-  </div></a>
+<div class="primary-container-hero centered"><img src="images/beta-duck.png" style="width: 100%; max-width: 150px; margin-bottom: 20px; margin-top: 70px;"></div>
 <div class="primary-container centered">
-  <div class="features">
-    <div class="feature-box">
-      <h1>Key Features</h1>
-      <div class="ftr1">
-        <h2>Comprehensive dashboards</h2>
-        <p>Create real-time dashboards with data from your HR systems so you can have a single source of truth for your key metrics.</p>
-      </div>
-      <div class="ftr2">
-        <h2>Plug-and-play templates</h2>
-        <p>Use our templates designed by HR super stars to setup all the dashboards you need in minutes.</p>
-      </div>
-      <div class="ftr3">
-        <h2>Easy sharing</h2>
-        <p>Share your dashboards with groups so your company can have the data they need to make informed decisions.</p>
-      </div>
+  <h1 class="hero">Let's show you Skipper!</h1>
+  <h4 class="hero">We just need a bit more information from you before we can proceed. </h4>
+  <form class="form-wrapper" id="demoFormComplete" action="success.html" method="GET">
+    <div class="input-req">
+      <input class="input-box input-primary" id="write" type="email" name="email" placeholder="Your email" required><span class="required">* Required</span>     
     </div>
-    <h1 class="hide-sml">Key Features</h1><br>
-    <div class="flex-container-sml features">
-      <div class="ftr1">
-        <h2>Comprehensive dashboards</h2>
-        <p>Create real-time dashboards with data from your HR systems so you can have a single source of truth for your key metrics.</p>
-      </div>
-      <div class="ftr2">
-        <h2>Plug-and-play templates</h2>
-        <p>Use our templates designed by HR super stars to setup all the dashboards you need in minutes.</p>
-      </div>
-      <div class="ftr3">
-        <h2>Easy sharing</h2>
-        <p>Share your dashboards with groups so your company can have the data they need to make informed decisions.</p>
-      </div>
+    <div class="input-req">
+      <input class="input-box input-primary" type="text" name="fullname" placeholder="Full name" required autofocus><span class="required">* Required</span>
     </div>
-    <div class="demo-box"><img class="demoimg" src="images/dashboard1.png"></div>
-  </div>
-</div>
-<div class="primary-container centered">
-  <h1>Designed for HR & People Analytics. </h1>
-  <h4>With all your data organized in one place, generate reports on retention, diversity, and recruitment in minutes.</h4><br>
-  <div class="flex">
-    <div class="usecase-box"><i class="fas fa-stethoscope skipper-icon"></i>
-      <h2>Monitor Organizational Health</h2>
-      <p>Easily keep track some of the most important trends in your workforce.</p>
-    </div>
-    <div class="usecase-box"><i class="fas fa-user-circle skipper-icon"></i>
-      <h2>Diagnose Retention Problems</h2>
-      <p>See the whole story of why people are leaving by tying together surveys, demographics, performance reviews, and more.</p>
-    </div>
-    <div class="usecase-box"><i class="fas fa-map-signs skipper-icon"></i>
-      <h2>Optimize Recruitment Pipelines</h2>
-      <p>Determine opportunities and inefficiencies in your recruitment process so you can hire better candidates faster.</p>
-    </div>
-  </div>
-</div>
-<div class="background-blue full-width-bg no-bottom-margin" id="getstarted">
-  <div class="primary-container">
-    <div class="seller centered"><img class="medium" src="images/research.png">
-      <h1 class="white">HR professionals spend 11 hours a week creating reports.</h1>
-      <h4 class="white">Check out what we’re reading about in the Workforce Analytics and Diversity and Inclusion space.</h4><br><br><a class="button hero-btn" href="/blog.html">Check out our blog</a>
-    </div>
-  </div>
-</div><br><br><br>
-<div class="centered">
-  <h1>Get Started</h1>
-  <h4>Let our team of people analytics experts show you how you can start understanding how your people work.</h4><br><br>
-  <form id="simpleForm" action="success.html" method="GET">
-    <input class="input-box input-nav fatty" type="email" placeholder="Enter email" name="email" required>
-    <input class="button button-nav fatty" id="email_submit" type="submit" value="Join beta">
+    <input class="input-box input-primary" type="text" name="phone" placeholder="Phone number"><br>
+    <input class="button button-nav" id="demo_submit" type="submit" value="Request Demo">
   </form>
+  <div class="container moat">
+    <h1 class="hero">Related articles:</h1><br><br>
+    <div class="flex">
+      <div class="column"><a href="https://www.recode.net/2017/4/18/15327848/workplace-culture-measurement-metrics-healthy-uber" target="_blank">
+          <div class="card blogcard shadow">
+            <div class="blogthumb" style="background-image: url(images/blog/recode.jpg);"></div>
+            <p class="source">RECODE</p>
+            <h4>Workplace culture should be measured</h4>
+            <p class="byline">by Taro Fukuyama</p>
+          </div></a></div>
+      <div class="column"><a href="http://projectinclude.org/measuring_progress#repeat-surveys-regularly-at-the-right-intervals" target="_blank">
+          <div class="card blogcard shadow">
+            <div class="blogthumb" style="background-image: url(images/blog/project-include.png);"></div>
+            <p class="source">Project Include</p>
+            <h4>Recommendations and resources to measure progress</h4>
+            <p class="byline">by Susan Fowler</p>
+          </div></a></div>
+      <div class="column"><a href="https://hbr.org/2017/09/the-case-for-investing-more-in-people" target="_blank">
+          <div class="card blogcard shadow">
+            <div class="blogthumb" style="background-image: url(images/blog/hbr-people.jpg);"></div>
+            <p class="source">Harvard Business Review</p>
+            <h4>The Case for Investing More in People</h4>
+            <p class="byline">by Eric Garton</p>
+          </div></a></div>
+    </div>
+  </div>
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-799084191/tft2CO3b6oQBEJ-dhP0C'});
+    
+  </script>
+  <script>fbq('track', 'ViewContent');</script>
 </div>
 <!-- footer-->
 <div class="footer">
