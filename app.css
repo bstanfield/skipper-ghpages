@@ -1160,6 +1160,8 @@ hr {
 @media screen and (max-width: 850px) {
   span.required {
     display: none !important; }
+  .banner i {
+    display: none; }
   .card {
     margin-bottom: 30px;
     width: 100%; }
@@ -1334,7 +1336,8 @@ a .banner:hover {
   font-size: 80px;
   right: 15%;
   top: 30%;
-  position: absolute; }
+  position: absolute;
+  opacity: .8; }
 
 .navbar {
   width: 100%;
@@ -2116,6 +2119,8 @@ input:required:valid {
 @media screen and (max-width: 850px) {
   span.required {
     display: none !important; }
+  .banner i {
+    display: none; }
   .card {
     margin-bottom: 30px;
     width: 100%; }
