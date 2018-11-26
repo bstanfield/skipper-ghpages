@@ -1027,7 +1027,7 @@ h1, h2, h3, h4, p, a, input, span {
 p {
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-size: 16px;
-  line-height: 35px; }
+  line-height: 40px; }
 
 h1 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
@@ -1040,14 +1040,14 @@ h1 {
 
 h2 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: #333333; }
 
 h4 {
   margin-top: -10px;
-  line-height: 35px;
-  font-size: 22px;
+  line-height: 40px;
+  font-size: 20px;
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-style: normal;
   font-weight: 400;
@@ -1070,7 +1070,7 @@ h4.hero {
 a {
   color: #333333 !important;
   text-decoration: none !important;
-  font-size: 22px; }
+  font-size: 20px; }
 
 input {
   font-size: 16px; }
@@ -1191,6 +1191,20 @@ hr {
     display: none; } }
 
 @media screen and (max-width: 650px) {
+  .hero-text {
+    text-align: center !important; }
+  .mobile-centered {
+    text-align: center; }
+  h1.hero {
+    font-size: 35px !important; }
+  h4.hero {
+    font-size: 22px !important; }
+  #simpleForm {
+    width: 80%; }
+  .hide-mobile {
+    display: none; }
+  .show-mobile {
+    display: block; }
   .button-nav {
     margin-bottom: 20px; }
   .hero-image {
@@ -1242,6 +1256,8 @@ hr {
     width: 100%; }
   .flex {
     display: block; }
+  .blog-container .flex {
+    margin-bottom: -20px; }
   .flex-container-sml {
     display: block; }
   .flex > .usecase-box {
@@ -1266,9 +1282,7 @@ hr {
     text-align: left;
     padding-left: 0px;
     padding-right: 0px;
-    width: 100%; }
-  .primary-container {
-    text-align: left; } }
+    width: 100%; } }
 
 body {
   margin: 0;
@@ -1288,7 +1302,7 @@ a .banner:hover {
   background-color: lightgrey;
   height: fit-content;
   width: 100%;
-  background: linear-gradient(0deg, rgba(9, 44, 109, 0.945), rgba(14, 60, 145, 0.664)), url("images/vegas.jpg");
+  background: linear-gradient(0deg, rgba(9, 44, 109, 0.945), rgba(14, 60, 145, 0.664)), url("images/skipper-engineering-integration-ideation.jpeg");
   background-image: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1316,10 +1330,10 @@ a .banner:hover {
   font-size: 28px !important;
   line-height: 40px !important; }
 
-.banner img {
-  width: 80px;
+.banner i {
+  font-size: 80px;
   right: 15%;
-  top: 35%;
+  top: 30%;
   position: absolute; }
 
 .navbar {
@@ -1410,12 +1424,20 @@ hr {
 h4.hero {
   margin-bottom: 40px; }
 
-h4.hero.caps {
+h4.caps {
   text-transform: uppercase;
-  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif !important;
   font-weight: 700;
   margin-bottom: 0;
-  font-style: initial; }
+  font-style: initial !important; }
+
+.banner h4 {
+  font-family: 'IBM Plex Serif';
+  font-style: italic;
+  margin-bottom: 0px; }
+
+.banner h4, .banner h1 {
+  color: white !important; }
 
 img.hero-img {
   position: absolute;
@@ -1436,6 +1458,7 @@ img.hero-img {
 .button {
   background-color: #507cf0;
   color: white !important;
+  display: inline-block;
   padding: 4px 10px;
   border-radius: 3px;
   font-weight: normal;
@@ -1457,7 +1480,20 @@ button:hover {
 .hero-btn {
   background-color: #E7C11C;
   padding: 12px 18px;
-  color: #333333 !important; }
+  color: #333333 !important;
+  font-size: 16px; }
+
+.banner .hero-btn {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+.banner-btn {
+  background-color: white;
+  opacity: .8; }
+
+.banner-btn:hover {
+  opacity: 1;
+  background-color: white !important; }
 
 .hero-btn:hover {
   background-color: #f8d849;
@@ -1519,8 +1555,20 @@ button:hover {
   margin: auto;
   justify-content: space-between; }
 
+.center-flex {
+  max-width: 1150px;
+  align-items: center;
+  padding-bottom: 0px; }
+
 .flex > div {
   flex-basis: 30%; }
+
+.flex > .half {
+  flex-basis: 55%;
+  margin-top: -40px; }
+
+.flex > .half-less {
+  flex-basis: 40%; }
 
 .flex .column {
   flex-basis: 30%; }
@@ -1594,6 +1642,10 @@ button:hover {
   padding: 0px !important;
   min-height: 430px; }
 
+.blog-container .flex {
+  padding-bottom: 0;
+  margin-bottom: 10px; }
+
 .blogcard > p {
   text-transform: uppercase;
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
@@ -1618,7 +1670,7 @@ button:hover {
 .blogcard > h4 {
   padding: 0px 30px 30px 30px;
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 700;
   text-align: left;
@@ -1672,8 +1724,12 @@ button:hover {
 
 .medium {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   margin: auto; }
+
+.blog-push {
+  margin-top: 30px;
+  margin-bottom: 50px; }
 
 .small {
   width: 100%;
@@ -1758,7 +1814,7 @@ button:hover {
 .full-width-bg {
   width: 100%;
   height: 100%;
-  padding: 50px 0px 100px 0px;
+  padding: 50px 0px 30px 0px;
   margin: 50px 0px 80px 0px; }
 
 .child-width {
@@ -1969,6 +2025,14 @@ input:required:valid {
   font-size: 25px;
   padding-top: 15px; }
 
+.icon-dark-blue {
+  color: rgba(24, 24, 193, 0.838);
+  font-size: 40px;
+  padding-bottom: 20px; }
+
+.icon-white {
+  color: white; }
+
 .fs {
   height: 400px;
   width: 100%;
@@ -2083,6 +2147,20 @@ input:required:valid {
     display: none; } }
 
 @media screen and (max-width: 650px) {
+  .hero-text {
+    text-align: center !important; }
+  .mobile-centered {
+    text-align: center; }
+  h1.hero {
+    font-size: 35px !important; }
+  h4.hero {
+    font-size: 22px !important; }
+  #simpleForm {
+    width: 80%; }
+  .hide-mobile {
+    display: none; }
+  .show-mobile {
+    display: block; }
   .button-nav {
     margin-bottom: 20px; }
   .hero-image {
@@ -2134,6 +2212,8 @@ input:required:valid {
     width: 100%; }
   .flex {
     display: block; }
+  .blog-container .flex {
+    margin-bottom: -20px; }
   .flex-container-sml {
     display: block; }
   .flex > .usecase-box {
@@ -2158,9 +2238,7 @@ input:required:valid {
     text-align: left;
     padding-left: 0px;
     padding-right: 0px;
-    width: 100%; }
-  .primary-container {
-    text-align: left; } }
+    width: 100%; } }
 
 body {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
@@ -2173,7 +2251,7 @@ h1, h2, h3, h4, p, a, input, span {
 p {
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-size: 16px;
-  line-height: 35px; }
+  line-height: 40px; }
 
 h1 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
@@ -2186,14 +2264,14 @@ h1 {
 
 h2 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: #333333; }
 
 h4 {
   margin-top: -10px;
-  line-height: 35px;
-  font-size: 22px;
+  line-height: 40px;
+  font-size: 20px;
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-style: normal;
   font-weight: 400;
@@ -2216,7 +2294,7 @@ h4.hero {
 a {
   color: #333333 !important;
   text-decoration: none !important;
-  font-size: 22px; }
+  font-size: 20px; }
 
 input {
   font-size: 16px; }
