@@ -91,6 +91,56 @@
         });
     });
   
+</script>
+<script>
+  var $ = require('jquery');
+  $(document).ready(function() {
+    $('.ftr1').toggleClass('hovered');
+    function swapImages() {
+      if ($('.demoimg').attr('src') == 'images/Comprehensive Dashboards.png') {
+        $('.ftr1').removeClass('hovered');  
+        $('.ftr2').toggleClass('hovered');  
+        $('.ftr3').removeClass('hovered');  
+        $('.demoimg').attr('src',"images/Templating.png")
+      } else if ($('.demoimg').attr('src') == 'images/Templating.png') {
+        $('.ftr1').removeClass('hovered');  
+        $('.ftr2').removeClass('hovered');  
+        $('.ftr3').toggleClass('hovered');        
+        $('.demoimg').attr('src',"images/EasyShare.png");
+      } else {
+        $('.ftr1').toggleClass('hovered');  
+        $('.ftr2').removeClass('hovered');  
+        $('.ftr3').removeClass('hovered');    
+        $('.demoimg').attr('src',"images/Comprehensive Dashboards.png");
+      }
+    }
+  
+  const swapImagesInterval = setInterval(swapImages, 5000);
+  
+  $('.ftr1, .ftr2, .ftr3').click(function() {
+    clearInterval(swapImagesInterval);
+    $('.ftr1').removeClass('hovered');  
+    $('.ftr2').removeClass('hovered');  
+    $('.ftr3').removeClass('hovered');
+  });
+  
+  $('.ftr1').click(function() {
+    $('.ftr1').toggleClass('hovered');  
+    $('.ftr2').removeClass('hovered');  
+    $('.ftr3').removeClass('hovered'); 
+  });
+  $('.ftr2').click(function() {
+    $('.ftr1').removeClass('hovered');  
+    $('.ftr2').toggleClass('hovered');  
+    $('.ftr3').removeClass('hovered'); 
+  });
+  $('.ftr3').click(function() {
+    $('.ftr1').removeClass('hovered');  
+    $('.ftr2').removeClass('hovered');  
+    $('.ftr3').toggleClass('hovered'); 
+  });
+  });
+  
   
 </script>
 <div class="background-blue">
@@ -185,7 +235,7 @@
   <h4>Let our team of people analytics experts show you how you can start understanding how your people work.</h4><br><br>
   <form id="simpleForm" action="success.html" method="GET">
     <input class="input-box input-nav fatty" type="email" placeholder="Enter email" name="email" required>
-    <input class="button button-nav fatty" id="email_submit" type="submit" value="Join beta">
+    <input class="button button-nav fatty" id="email_submit" type="submit" value="Join waitlist">
   </form>
 </div>
 <!-- footer-->

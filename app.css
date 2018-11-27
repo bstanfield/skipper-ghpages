@@ -1299,6 +1299,9 @@ a .banner {
 a .banner:hover {
   opacity: 1; }
 
+.hovered {
+  background-color: rgba(238, 238, 238, 0.548); }
+
 .banner {
   position: relative;
   background-color: lightgrey;
@@ -1531,7 +1534,8 @@ button:hover {
 .ftr1, .ftr2, .ftr3 {
   padding: 5px 8px 8px 15px;
   border-radius: 2px;
-  transition: .5s ease; }
+  transition: .5s ease;
+  cursor: pointer; }
 
 .ftr1:hover, .ftr2:hover, .ftr3:hover {
   background-color: rgba(238, 238, 238, 0.548); }
@@ -1544,11 +1548,15 @@ button:hover {
   width: 850px;
   float: right;
   border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, whitesmoke 0px -1px 0px; }
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, whitesmoke 0px -1px 0px;
+  transition: .5s ease all; }
 
 .demo-box img {
   width: 100%;
   border-radius: 3px; }
+
+.demoimg {
+  transition: .5s ease all; }
 
 .flex {
   max-width: 1000px;
@@ -1982,18 +1990,13 @@ input:required:valid {
 .closer {
   margin-top: 80px; }
 
-.error {
-  padding: 50px; }
-
-.error-text {
-  font-size: 120px;
-  color: #b13c19;
-  margin-top: 80px;
-  margin-bottom: 50px; }
-
-.error img {
-  width: 70%;
-  margin: 30px; }
+.errortext {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 30px;
+  background-color: #dadada;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 5px; }
 
 .container {
   padding-left: 0px;
