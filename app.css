@@ -1962,10 +1962,15 @@ input:required:valid {
   padding-bottom: 100px; }
 
 .footer a {
-  padding-top: 5px;
+  padding-top: 12px;
   opacity: .4;
-  line-height: 30px;
-  display: block; }
+  line-height: 25px;
+  display: block;
+  font-size: 18px;
+  transition: .3s ease; }
+
+.footer a:hover {
+  opacity: 1; }
 
 #footer-hr {
   border-top: 2px solid #e9e9e9; }
@@ -2037,20 +2042,23 @@ input:required:valid {
   color: white; }
 
 .fs {
-  height: 400px;
+  height: 250px;
   width: 100%;
   background-size: cover;
-  margin-bottom: 80px; }
+  position: relative;
+  margin-bottom: 50px; }
 
 .fs-about {
-  background: linear-gradient(0deg, rgba(23, 99, 185, 0.575), rgba(51, 121, 211, 0.096)), url("images/skipper-sketch.jpg"); }
+  background: linear-gradient(0deg, rgba(23, 99, 185, 0), rgba(51, 121, 211, 0.096)), url("images/skipper-sketch.jpg");
+  background-attachment: fixed; }
 
 .fs-blog {
-  background: linear-gradient(0deg, rgba(75, 75, 75, 0.575), rgba(88, 88, 88, 0.096)), url("https://cdn-images-1.medium.com/max/2000/1*xsZByF7s6JRdUHRP68Cg6Q.jpeg"); }
+  background: linear-gradient(0deg, rgba(75, 75, 75, 0.575), rgba(88, 88, 88, 0.096)), url("https://cdn-images-1.medium.com/max/2000/1*xsZByF7s6JRdUHRP68Cg6Q.jpeg");
+  background-attachment: fixed; }
 
 .fs h1 {
   color: white;
-  margin-top: 210px;
+  margin-top: 135px;
   text-align: center;
   font-size: 50px;
   letter-spacing: 5px; }
